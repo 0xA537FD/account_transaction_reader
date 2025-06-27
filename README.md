@@ -9,3 +9,8 @@ It uses `clap` to parse the CLI args for future extensibility, while it doesn't 
 ## Testing
 
 The most crucial piece, the `AccountService` has a couple unit tests for the edge cases that should be ignored. Besides that I provide a simple testing suite with two example files that should be possible to process without the application crashing. There is a simple file and a bigger/more complex file that was generated with ChatGPT simply to test the performance and error acceptance of the program.
+
+## Tools used
+
+- ChatGPT for sample data generation
+- Cursor for writing the application
