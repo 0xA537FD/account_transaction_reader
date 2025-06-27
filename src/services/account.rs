@@ -55,8 +55,9 @@ impl AccountService {
                     return;
                 }
 
-                account.available += transaction.amount.unwrap();
-                account.total += transaction.amount.unwrap();
+                let amount = transaction.amount.unwrap();
+                account.available += amount;
+                account.total += amount;
                 self.disputable_transactions
                     .insert(transaction.tx, transaction);
             }
